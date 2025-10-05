@@ -1,0 +1,16 @@
+services:
+  db-postgres-api-tarefas:
+    image: postgres:18
+    container_name: db-postgres-api-tarefas
+    restart: always
+    environment:
+      POSTGRES_USER: pguser
+      POSTGRES_PASSWORD: pgpassword
+      POSTGRES_DB: mydb
+    ports:
+      - "5435:5432" # Porta do Windows : Porta do container
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:
