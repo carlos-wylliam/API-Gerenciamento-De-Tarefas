@@ -1,0 +1,28 @@
+{
+  "name": "api-lista-de-tarefas",
+  "version": "1.0.0",
+  "description": "API RESTful desenvolvida em **Node.js** com **TypeScript**, **Express**, **PostgreSQL** e **Prisma ORM**, containerizada com **Docker**.  \r O objetivo deste projeto é consolidar o aprendizado prático de tecnologias modernas do backend enquanto constrói uma aplicação completa de **gestão de tarefas (to-do list)**, com autenticação e boas práticas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlos-wylliam/API-Gerenciamento-De-Tarefas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlos-wylliam/API-Gerenciamento-De-Tarefas/issues"
+  },
+  "homepage": "https://github.com/carlos-wylliam/API-Gerenciamento-De-Tarefas#readme",
+  "dependencies": {
+    "@prisma/client": "^6.16.3",
+    "@types/express": "^5.0.3",
+    "express": "^5.1.0",
+    "prisma": "^6.16.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}
