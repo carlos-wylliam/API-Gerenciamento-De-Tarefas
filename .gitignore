@@ -1,2 +1,24 @@
 node_modules
 /src/generated/prisma
+# Node modules
+node_modules/
+
+# Build TypeScript
+dist/
+
+# Arquivos de log
+*.log
+
+# .env
+.env
+
+# Prisma Client (gerado)
+prisma/client/
+
+# Docker
+*.env.*  # caso você use arquivos de configuração separados
+docker-compose.override.yml
+
+# Mac / Windows específicos
+.DS_Store
+Thumbs.db
