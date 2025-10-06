@@ -4,7 +4,6 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import { z } from 'zod';
 
-// ========== SCHEMAS ==========
 const registerSchema = z.object({
   name: z.string()
     .min(2, "Nome muito curto")
@@ -19,7 +18,6 @@ const loginSchema = z.object({
   password: z.string().min(8, "Senha precisa ter pelo menos 8 caracteres")
 });
 
-// ========== REGISTRO ==========
 export const registerUser = async (req: Request, res: Response) => {
   try {
     const { name, email, password } = registerSchema.parse(req.body);
@@ -53,7 +51,6 @@ export const registerUser = async (req: Request, res: Response) => {
   }
 };
 
-// ========== LOGIN ==========
 export const login = async (req: Request, res: Response) => {
   try {
     const { email, password } = loginSchema.parse(req.body);
